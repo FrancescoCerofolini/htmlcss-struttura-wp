@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0 5%;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  margin: 1% 2%;
+  background-color: pink;
+}
+
+.floater::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top {
+  height: 20vh;
+  width: 100%;
+  margin: 1% 2%;
+  background-color: yellow;
+}
+.floater {
+  height: 50vh;
+  width: 100%;
+  margin: 1% 2%;
+  background-color: cyan;
+}
+
+.middle_left,
+.middle_right,
+.middle_middle {
+  display: inline-block;
+  height: 45vh;
+  width: 30%;
+  margin: 1.5%;
+  background-color: lightblue;
+}
+.middle_right {
+  float: right;
+}
+.middle_middle {
+  float: inherit;
+}
+.middle_left {
+  float: left;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  margin: 1% 2%;
+  background-color: purple;
+}
